@@ -1,6 +1,7 @@
 // GpxUploader.jsx
 import React, { useState } from 'react';
-import { parseGpxFile, generateRaceDataPoints } from './GpxParser';
+import { parseGpxFile, generateRaceDataPoints } from '.utils/GpxParser';
+import GpxParser from './utils/GpxParser'; 
 
 const GpxUploader = ({ onRouteLoaded }) => {
   const [isLoading, setIsLoading] = useState(false);
